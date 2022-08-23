@@ -1,5 +1,6 @@
 /* Importaciones */
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 /* Variables */
 
 /* Estilos generales */
@@ -17,7 +18,21 @@ form input{
 /* Header */
 
 /* Nav */
+.titulo{
+    
+    font-family: 'Anton', sans-serif;
+}
+.menu{
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
+@media (max-width:768px){
+    .iconos{
+        display: none;  
+    }
+    .titulo{
+        margin-right:50px;}
+}
 /* Main */
 
 /* Carrousel */

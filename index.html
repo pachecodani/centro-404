@@ -9,11 +9,72 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <!-- css personalizado -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="/iconosr-sociales/bootstrap-icons.css">
   </head>
   <body>
     <div class="container-xxl">
       <header>
-        <nav></nav>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid p-0  ">
+                    <!-- icono -->
+               
+              <a class="navbar-brand " href="#">
+                    <img  src="/imagenes/CFL404.ico" alt="logo">
+               </a>
+                 <div>
+                     <p class=" titulo mb-auto mt-4 ; "> CENTRO DE FORMACION <br> PROFESIONAL nº 404</p>
+                      <ul class="iconos navbar-nav sm-icons ">
+                         <li >
+                          <a class="  nav-link  " href="https://www.instagram.com/centroformacionlaboral404/" target="_blank" ><i class="bi bi-instagram "></i></a>
+                         </li>
+                         <li>
+                         <a class=" nav-link" href="https://www.instagram.com/centroformacionlaboral404/" target="_blank" > <i class="bi bi-twitter"></i></a>  
+                         </li>
+                         <li>
+                         <a class=" nav-link" href="https://www.facebook.com/cfp404ensenada/?ref=page_internal" target="_blank" > <i class="bi bi-facebook"></i></a>
+                         </li>
+                         <li>
+                         <i><a class="nav-link" href="https://api.whatsapp.com/send?phone=542213170023&app=facebook&entry_point=page_cta" target="_blank" > <i class="bi bi-whatsapp"></i></a></i>
+                         </li>
+                      </ul>
+                   </div>   
+                 
+     
+               
+                 <!-- boton del menu -->
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                   data-bs-target="#menu" aria-controls="navbarNavDropdown"
+                   aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <!-- elementos del menu -->
+                   <div class="menu collapse navbar-collapse " id="menu">
+                       <ul class="navbar-nav ms-auto ">
+                          <li class="nav-item  pe-4"><a class="nav-link active"  href="">Inicio</a></li>
+                          <li class="nav-item pe-4"><a class="  nav-link  " href="">Informacion</a></li>
+                          <li class="nav-item dropdown pe-4">
+                               <a class="nav-link dropdown-toggle  " href="#"
+                               
+                               id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#">Cursos</a>
+                              <ul class="dropdown-menu ">
+                                   <li><a class="dropdown-item" href="">Comunicacion</a> </li>
+                                   <li><a class="dropdown-item" href="">Admnistracion</a></li>
+                                   <li><a class="dropdown-item" href="">Informatica</a></li>
+                                   <li><a class="dropdown-item" href="">Idiomas</a></li>
+                                 </ul>
+                             </li>
+                          <li class="nav-item pe-4"><a class="nav-link  " href="">Jobs</a></li>
+                          <li class="nav-item  "><a class="nav-link " href="">Contacto</a></li>
+     
+                         </ul>
+     
+                   </div>
+     
+     
+            </div>
+     
+         </nav>
+     
       </header>
       <main>
         <section id="carrousel"></section>
@@ -143,7 +204,8 @@
       <footer></footer>
     </div>
     <!-- Script bootstrap-->
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="./bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="/bootstrap/js/bootstrap.bundle.js"></script>
     <!-- Script -->
     <script src="./assets/js/app.js"></script>
   </body>
