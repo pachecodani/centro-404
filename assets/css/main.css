@@ -22,6 +22,13 @@ body {
 img {
 	max-width: 100%;
 }
+.formulario{
+	background: cornflowerblue;
+	display:inline-block;
+	padding:10px;
+	border-radius: 10px;
+	margin: 10px;
+}
 
 form label{
     display: block;
@@ -31,6 +38,16 @@ form label{
 form input{
     display: block;
     padding:5px 25px;
+}
+#Mensaje{
+	border-radius:15px;
+	resize:none;
+	
+}
+#enviar{
+	border-radius: 15px;
+	margin-left: 5px;
+	
 }
 
 
