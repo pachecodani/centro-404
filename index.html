@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <!-- css personalizado -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/stylo.css" />
     <link rel="stylesheet" href="/iconosr-sociales/bootstrap-icons.css">
   </head>
   <body>
@@ -19,7 +20,7 @@
                     <!-- icono -->
                
               <a class="navbar-brand " href="#">
-                    <img  src="/imagenes/CFL404.ico" alt="logo">
+                    <img  src="./imagenes/CFL404.ico" alt="logo">
                </a>
                  <div>
                      <p class=" titulo mb-auto mt-4 ; "> CENTRO DE FORMACION <br> PROFESIONAL nº 404</p>
@@ -110,7 +111,52 @@
           </div>
         </section>
         <section id="frase-motivadora"></section>
-        <section id="cursos"></section>
+
+        <section id="cursos">
+          <div class="container-cursos">
+            <div  class="card" >
+             
+              <img src="images/administracion.jpg">
+              
+              <div class="contenido">
+                <h3>Administracion</h3>
+                <p>Lorem ipsum dolor sit amet, consectet</p>
+                <a href="#">Leer mas</a>
+              </div>
+              <div  class="card" >
+                
+                  <img src="images/electromecanica.jpg">
+               
+                <div class="contenido">
+                  <h3>Electromecanica</h3>
+                  <p>Lorem ipsum dolor sit amet, consectet</p>
+                  <a href="#">Leer mas</a>
+                </div>
+                <div  class="card" >
+                
+                    <img src="images/comunicacion.jpg">
+                  
+                  <div class="contenido">
+                    <h3>Comunicacion</h3>
+                    <p>Lorem ipsum dolor sit amet, consectet</p>
+                    <a href="#">Leer mas</a>
+                  </div>
+                </div>
+                <div  class="card" >
+               
+                    <img src="images/ambiental.jpg">
+                
+                  <div class="contenido">
+                    <h3>Saneamiento Ambiental</h3>
+                    <p>Lorem ipsum dolor sit amet, consectet</p>
+                    <a href="#">Leer mas</a>
+                  </div>
+                </div>
+            </div> 
+          </div>
+        </section>
+
+        
         <section id="info"></section>
         <section id="faq"></section>
           <div class="accordion" id="accordionExample">
@@ -211,25 +257,30 @@
           </div>
         </section>
         <section id="mapa"></section>
-        <section id="form">
-          <div class="formulario">
-            <h3>Formulario de consulta</h3>
-            <form>
-                <label for="Nombre">Nombre</label>
-                <input type="text" id="Nombre" name="Nombre" required/>
-    
-                <label for="Apellido">Apellido</label>
-                <input type="text" id="Apellido" name="Apellido" required/>
-    
-                <label for="Correo">Correo</label>
-                <input type="email" id="Correo" name="Correo" required placeholder="Email@dominio.com"/>
-    
-                <label for"Mensaje">Mensaje</label>
-                <textarea cols="30" rows="6" id="Mensaje" required></textarea>
-    
-                <input type="submit" id="enviar" />
+        <section id="sect-form">
+          <div class="contenedor-form">
+            <form action="" class="cont-form">
+              <div class="form-header">
+                <h1 class="form-title"><span>Contacto</span></h1>
+              </div>
+              
+              <label for="nombre" class="form-label"></label>
+              <input type="text" class="form-input" id="nombre" placeholder="Aqui escriba su nombre">
+
+              <label for="apellido" class="form-label"></label>
+              <input type="text" class="form-input" id="apellido" placeholder="Aqui escriba su apellido">
+
+              <label for="correo" class="form-label"></label>
+              <input type="email" class="form-input" id="correo" placeholder="Aqui escriba su correo ">
+
+              <label for="mensaje" class="form-label"></label>
+              <textarea id="mensaje" class="form-textarea" placeholder="Escribir mensaje"></textarea>
+
+              <input type="submit" class="btn-submit" value="Enviar consulta"
+
+            
             </form>
-        </div>
+          </div>
         </section>
       </main>
       <footer class="container-xxl">
