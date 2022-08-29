@@ -1,6 +1,7 @@
 /* Importaciones */
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 /* Variables */
 
 /* Estilos generales */
@@ -12,11 +13,16 @@
 	box-sizing: border-box;
 }
 
+
 body {
-    background: #fbfbfb;
+	background: url("../../images/fondo.png");
+background-attachment: fixed;
+background-size: cover;
+    /* background: #fbfbfb;
     display: flex;
 	align-items: center;
 	justify-content: center;
+	 */
 }
 
 img {
@@ -95,6 +101,20 @@ img {
 /* Header */
 
 /* Nav */
+nav {
+	display: flex;
+	width: 100%;
+	position: sticky;
+	z-index: 2;
+	transition: background-color 0.5s;
+	justify-content: end;
+	background: #FFB75E;
+	background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);
+	background: linear-gradient(to right, #ED8F03, #f6be7b); 
+	position: sticky;
+	top: 0;
+	}
+
 .titulo{
     
     font-family: 'Anton', sans-serif;
@@ -234,22 +254,23 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
     width: 100%; */
 
 .terminos p {
-    color: aliceblue;
-    font-weight: 400;
+    color: rgb(38, 44, 49);
+    font-weight: 600;
 
 }
 
 footer {
-    color: aliceblue;
     font-weight: 700;
     width: 100%;
     padding: 10px 0px;
-    background-color: rgb(8, 8, 8);
+	position: absolute;
+	background: transparent;
+	background: rgba(205, 203, 203, 0.4);
 }
 
 .box__footer a {
     margin-top: 10px;
-    color: rgb(167, 181, 192);
+    color: rgb(11, 31, 47);
     font-weight: 600
 }
 
@@ -280,11 +301,11 @@ footer {
     width: 250px;
 }
 
-.box__footer .terminos {
+.box__footer .terminos{
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
-    color: rgb(167, 181, 192);
+    color: rgb(0, 0, 0);
     font-size: 18px;
 }
 
@@ -298,6 +319,6 @@ footer {
     max-width: 1200px;
     margin: auto;
     margin-bottom: 40px;
-    color: aliceblue;
+    color: rgb(58, 65, 72);
     padding: 0px 40px;
 }
