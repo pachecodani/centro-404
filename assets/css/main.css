@@ -251,6 +251,52 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
 
 /* Mapa */
 
+#mapa {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+#mapa div {
+  width: 48%;
+  border-radius: 1rem;
+}
+
+#mapa div:last-child {
+  background-color: #ed8f03a5;
+  text-align: center;
+  padding-top: 6rem;
+}
+#mapa h3 {
+  font-size: 2rem;
+}
+#mapa ul {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+#mapa iframe {
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  #mapa {
+    flex-direction: column-reverse;
+  }
+  #mapa div {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  #mapa div:first-child {
+    margin-top: 1rem;
+  }
+  #mapa div:last-child {
+    padding: 0;
+  }
+}
+
 /* Footer */
 /* .container__xxl {
     /* position: absolute;
