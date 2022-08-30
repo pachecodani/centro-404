@@ -231,12 +231,22 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
 
 /* Cursos */
 
+.cursos-title {
+  text-align: center;
+  padding-top: 50px;
+
+}
+
 /* Info */
 
 /* FAQ */
 #faq {
   max-width: 650px;
   margin: auto;
+}
+
+.faq-title {
+  text-align: center;
 }
 
 /* Mapa */
