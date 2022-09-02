@@ -22,6 +22,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	 */
+   
 }
 
 img {
@@ -85,22 +86,26 @@ img {
 /* Header */
 
 /* Nav */
+.navbar{
+  position: fixed;
+  left: 0;
+  padding: 0;
+}
 nav {
   display: flex;
   width: 100%;
-  position: sticky;
   z-index: 2;
   transition: background-color 0.5s;
   justify-content: end;
   background: #ffb75e;
   background: -webkit-linear-gradient(to right, #ed8f03, #ffb75e);
   background: linear-gradient(to right, #ed8f03, #f6be7b);
-  position: sticky;
-  top: 0;
+ 
 }
 
 .titulo {
   font-family: "Anton", sans-serif;
+  padding-left: 7px;
 }
 .menu {
   font-family: "Roboto Condensed", sans-serif;
@@ -114,6 +119,17 @@ nav {
     margin-right: 50px;
   }
 }
+
+.itg:hover{
+  color: rgb(195, 62, 126);
+}
+.fb:hover{
+  color:rgb(21, 26, 167);
+}
+.wsp:hover{
+  color: rgb(35, 140, 45);
+}
+
 /* Main */
 
 /* Carrousel */
@@ -132,6 +148,15 @@ nav {
   transition: all 300ms;
   animation: autoplay 6.5s infinite alternate;
   /* animation-fill-mode: forwards; */
+  position: relative;
+   top: 112px;
+  height: 469px;
+}
+@media (max-width: 768px) {
+  .slide{
+    top: 106px;
+    height: 250px;
+  }
 }
 
 .item-slide {
@@ -370,3 +395,4 @@ footer {
   color: rgb(58, 65, 72);
   padding: 0px 40px;
 }
+
