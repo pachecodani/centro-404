@@ -77,8 +77,11 @@ img {
   cursor: pointer;
   transition: all 0.5s ease;
 }
+.contenedor-form .cont-form .btn-submit {
+  background: #f6be7b;
+}
 .contenedor-form .cont-form .btn-submit:hover {
-  background: orange;
+  background: #ed8f03;
 }
 
 /* stylo formualrio*/
