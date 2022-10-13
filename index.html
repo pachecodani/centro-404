@@ -19,9 +19,8 @@
     <link rel="stylesheet" href="./assets/css/stylo.css" />
     <link rel="stylesheet" href="/iconosr-sociales/bootstrap-icons.css" />
   </head>
-  <body>
-    <div class="container-xxl p-0">
-      <header>
+  <body class="p-0">
+      <header class="sticky-top ">
         <nav class="navbar navbar-expand-md">
           <div class="container-fluid p-0">
             <!-- icono -->
@@ -157,7 +156,10 @@
               <div class="contenido">
                 <h3>Administracion</h3>
                 <p>Lorem ipsum dolor sit amet, consectet</p>
-                <a href="#">Leer mas</a>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                  Leer más
+                </button>
               </div>
             </div>
             <div class="card">
@@ -166,7 +168,10 @@
               <div class="contenido">
                 <h3>Electromecanica</h3>
                 <p>Lorem ipsum dolor sit amet, consectet</p>
-                <a href="#">Leer mas</a>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                  Leer más
+                </button>
               </div>
             </div>
             <div class="card">
@@ -189,10 +194,67 @@
             </div>
           </div>
         </section>
-
-        <section id="info"></section>
-        <h1 class="faq-title"><span>Preguntas Frecuentes</span></h1>
+    <!-- Modal 1-->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Administracion</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis velit aliquid officia id distinctio eveniet alias in laudantium ad sequi.</p>
+            <h3>Plan de Estudio</h3>
+            <ul>
+              <li>Tema1</li>
+              <li>Tema2</li>
+              <li>Tema3</li>
+            </ul>
+            <h3>Duración:</h3>
+            <p>Duración: 5 meses.</p>
+            <p>Inicio: 27 de febrero - Fin: 31 de Julio.</p>
+            <h3>Horarios:</h3>
+            <p>Lunes y Miercoles: 16 a 18hs</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Inscribirse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Electromecanica</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis velit aliquid officia id distinctio eveniet alias in laudantium ad sequi.</p>
+            <h3>Plan de Estudio</h3>
+            <ul>
+              <li>Tema4</li>
+              <li>Tema5</li>
+              <li>Tema6</li>
+            </ul>
+            <h3>Duración:</h3>
+            <p>Duración: 3 meses.</p>
+            <p>Inicio: 27 de febrero - Fin: 31 de Mayo.</p>
+            <h3>Horarios:</h3>
+            <p>Martes y Jueves: 14 a 16hs.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Inscribirse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- Otra seccion-->
         <section id="faq">
+          <h1 class="faq-title"><span>Preguntas Frecuentes</span></h1>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
@@ -292,7 +354,7 @@
         </section>
         <section id="sect-form">
           <div class="contenedor-form">
-            <form action="" class="cont-form">
+            <form action="" class="cont-form bg-dark bg-gradient mb-3" style="--bs-bg-opacity: .3;">
               <div class="form-header">
                 <h1 class="form-title"><span>Contacto</span></h1>
               </div>
@@ -332,7 +394,7 @@
             </form>
           </div>
         </section>
-        <section  id="mapa">
+        <section id="mapa">
           <div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12858.085398991207!2d-57.956618754193336!3d-34.885051839540274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e73bb96742df%3A0xcbd59348f76291f1!2sCamping%20SOSBA!5e0!3m2!1sen!2sar!4v1661861349110!5m2!1sen!2sar"
@@ -355,7 +417,7 @@
           </div>
         </section>
       </main>
-      <footer class="container-xxl">
+      <footer>
         <div class="container__footer">
           <div class="box__footer">
             <div class="logo__footer">
@@ -393,7 +455,6 @@
           <p>Todos los derechos reservados &copy; 2022 <b>SOSBA</b></p>
         </div>
       </footer>
-    </div>
     <!-- Script icons -->
     <script
       src="https://kit.fontawesome.com/39be9ea85a.js"

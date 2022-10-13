@@ -34,6 +34,7 @@ img {
   text-align: center;
 }
 .contenedor-form .cont-form {
+  backdrop-filter: blur(5px);
   width: 98%;
   max-width: 659px;
   margin: auto;
@@ -76,8 +77,11 @@ img {
   cursor: pointer;
   transition: all 0.5s ease;
 }
+.contenedor-form .cont-form .btn-submit {
+  background: #f6be7b;
+}
 .contenedor-form .cont-form .btn-submit:hover {
-  background: orange;
+  background: #ed8f03;
 }
 
 /* stylo formualrio*/
@@ -85,10 +89,19 @@ img {
 /* Header */
 
 /* Nav */
+/* 
 .navbar {
   position: fixed;
   left: 0;
   padding: 0;
+}
+*/
+section[id]:before {
+  display: block;
+  height: 128px;   /* equal to the header height */
+  margin-top: -128px;  /* negative margin equal to the header height */
+  visibility: hidden;
+  content: "";
 }
 nav {
   display: flex;
@@ -100,7 +113,6 @@ nav {
   background: -webkit-linear-gradient(to right, #ed8f03, #ffb75e);
   background: linear-gradient(to right, #ed8f03, #f6be7b);
 }
-
 .titulo {
   font-family: "Anton", sans-serif;
   padding-left: 7px;
@@ -108,7 +120,6 @@ nav {
 .menu {
   font-family: "Roboto Condensed", sans-serif;
 }
-
 @media (max-width: 768px) {
   .iconos {
     display: none;
@@ -147,8 +158,8 @@ nav {
   animation: autoplay 6.5s infinite alternate;
   /* animation-fill-mode: forwards; */
   position: relative;
-  top: 112px;
-  height: 469px;
+  top: auto; /*112px before*/
+  height: auto; /*469px before*/
 }
 @media (max-width: 768px) {
   .slide {
@@ -259,8 +270,6 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
   padding-top: 50px;
 }
 
-/* Info */
-
 /* FAQ */
 #faq {
   max-width: 650px;
@@ -318,6 +327,7 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
     padding: 0;
   }
 }
+
 
 /* Footer */
 /* .container__xxl {
