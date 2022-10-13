@@ -19,7 +19,6 @@
     box-shadow:0 2px 2px rgba(0, 0, 0, 0.7);
     text-align: center;
     transition:all 0.25s;
-
 }
 .container-cursos .card:hover{
     transform:translateY(-15px);
