@@ -40,8 +40,10 @@ img {
   margin: auto;
   padding: 5px 35px;
   margin-top: 30px;
+  margin-bottom: 10px;
   padding-bottom: 30px;
   border-radius: 3px;
+  backdrop-filter: blur(5px);
 }
 .contenedor-form .form-label {
   display: block;
@@ -81,7 +83,7 @@ img {
   background: orange;
 }
 
-/* stylo formualrio*/
+/* stylo formulario*/
 
 /* Header */
 
@@ -91,6 +93,7 @@ img {
   left: 0;
   padding: 0;
 }
+
 nav {
   display: flex;
   width: 100%;
@@ -98,8 +101,8 @@ nav {
   transition: background-color 0.5s;
   justify-content: end;
   background: #ffb75e;
-  background: -webkit-linear-gradient(to right, #ed8f03, #ffb75e);
-  background: linear-gradient(to right, #ed8f03, #f6be7b);
+  background: -webkit-linear-gradient(to left, #4d9fd6 , #ffb75e);
+  background: linear-gradient(to left, #4d9fd6 , #f6be7b);
  
 }
 
@@ -117,6 +120,10 @@ nav {
   }
   .titulo {
     margin-right: 50px;
+  }
+
+  .menu{
+    margin-left: 10px;
   }
 }
 
@@ -290,7 +297,7 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
 }
 
 #mapa div:last-child {
-  background-color: #ed8f03a5;
+  background-color:  rgb(77, 159, 214, 0.7);
   text-align: center;
   padding-top: 6rem;
 }
@@ -396,3 +403,16 @@ footer {
   padding: 0px 40px;
 }
 
+/* Modal */
+/* Corroborar Breakpoint */
+
+
+@media screen and (max-width: 1000px){
+
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    flex-direction: row;
+  }
+}
