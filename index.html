@@ -8,10 +8,10 @@
     <link
       rel="shortcut icon"
       href="images/CFL404icon.ico"
-      <!--
+    
       css
       bootstrap
-      --
+
     />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <!-- css personalizado -->
@@ -83,10 +83,10 @@
             <div class="menu collapse navbar-collapse" id="menu">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item pe-4">
-                  <a class="nav-link active" href="">Inicio</a>
+                  <a class="nav-link active" href="#"><i class="bi bi-house">Inicio</i></a>
                 </li>
                 <li class="nav-item pe-4">
-                  <a class="nav-link" href="#mapa">Como llegar</a>
+                  <a class="nav-link" href="#mapa"><i class="bi bi-map">Como llegar</i></a>
                 </li>
                 <li class="nav-item dropdown pe-4">
                   <a
@@ -96,7 +96,7 @@
                     role="button"
                     data-bs-toggle="dropdown"
                     href="#"
-                    >Cursos</a
+                    ><i class="bi bi-book">Cursos</i></a
                     >
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="">Administracion</a></li>
@@ -106,10 +106,10 @@
                   </ul>
                 </li>
                 <li class="nav-item pe-4">
-                  <a class="nav-link" href="#faq">Preguntas Frecuentes</a>
+                  <a class="nav-link" href="#faq"><i class="bi bi-patch-question">Preguntas frecuentes</i></a>
                 </li>
                 <li class="nav-item pe-4">
-                  <a class="nav-link" href="#sect-form">Contacto</a>
+                  <a class="nav-link" href="#sect-form"><i class="bi bi-mailbox">Contacto</i></a>
                 </li>
               </ul>
             </div>
@@ -196,30 +196,92 @@
         </section>
     <!-- Modal 1-->
     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Administracion</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
+          <br>
           <div class="modal-body">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis velit aliquid officia id distinctio eveniet alias in laudantium ad sequi.</p>
-            <h3>Plan de Estudio</h3>
-            <ul>
-              <li>Tema1</li>
-              <li>Tema2</li>
-              <li>Tema3</li>
-            </ul>
-            <h3>Duración:</h3>
-            <p>Duración: 5 meses.</p>
-            <p>Inicio: 27 de febrero - Fin: 31 de Julio.</p>
-            <h3>Horarios:</h3>
-            <p>Lunes y Miercoles: 16 a 18hs</p>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col">
+                    <div class="modal-header-child">
+                        <h1 class="modal-title fs-5">Introduccion a la Administracion</h1>
+                    </div>
+                    <div class="modal-body-child">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis velit aliquid officia id distinctio eveniet alias in laudantium ad sequi.</p>
+                        <h3><a href="#">Plan de Estudio</a></h3>
+                        <ul>
+                          <li>Tema1</li>
+                          <li>Tema2</li>
+                          <li>Tema3</li>
+                        </ul>
+                        <h3>Duración:</h3>
+                        <p>Duración: 5 meses.</p>
+                        <p>Inicio: 27 de febrero - Fin: 31 de Julio.</p>
+                        <h3>Horarios:</h3>
+                        <p>Lunes y Miercoles: 16 a 18hs</p>
+                      </div>
+                      <div class="modal-footer-child">
+                        <button type="button" class="btn btn-primary">Inscribirse</button>
+                      </div>
+                    <br>
+                </div>
+                <div class="col">
+                  <div class="modal-header-child">
+                      <h1 class="modal-title fs-5">Finanzas Personales y Autogestion</h1>
+                  </div>
+                  <div class="modal-body-child">
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis velit aliquid officia id distinctio eveniet alias in laudantium ad sequi.</p>
+                      <h3><a href="#">Plan de Estudio</a></h3>
+                      <ul>
+                        <li>Tema1</li>
+                        <li>Tema2</li>
+                        <li>Tema3</li>
+                      </ul>
+                      <h3>Duración:</h3>
+                      <p>Duración: 5 meses.</p>
+                      <p>Inicio: 27 de febrero - Fin: 31 de Julio.</p>
+                      <h3>Horarios:</h3>
+                      <p>Lunes y Miercoles: 16 a 18hs</p>
+                    </div>
+                    <div class="modal-footer-child">
+                      <button type="button" class="btn btn-primary">Inscribirse</button>
+                    </div>
+                    <br>
+              </div>
+              <div class="col">
+                <div class="modal-header-child">
+                    <h1 class="modal-title fs-5">Ofimatica para la Administracion</h1>
+                </div>
+                <div class="modal-body-child">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis velit aliquid officia id distinctio eveniet alias in laudantium ad sequi.</p>
+                    <h3><a href="#">Plan de Estudio</a></h3>
+                    <ul>
+                      <li>Tema1</li>
+                      <li>Tema2</li>
+                      <li>Tema3</li>
+                    </ul>
+                    <h3>Duración:</h3>
+                    <p>Duración: 5 meses.</p>
+                    <p>Inicio: 27 de febrero - Fin: 31 de Julio.</p>
+                    <h3>Horarios:</h3>
+                    <p>Lunes y Miercoles: 16 a 18hs</p>
+                  </div>
+                  <div class="modal-footer-child">
+                    <button type="button" class="btn btn-primary">Inscribirse</button>
+                  </div>
+            </div>
+                </div>
+              </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Inscribirse</button>
           </div>
+          
         </div>
       </div>
     </div>
@@ -390,7 +452,7 @@
                 placeholder="Escribir mensaje"
               ></textarea>
 
-              <input type="submit" class="btn-submit" value="Enviar consulta"
+              <input type="submit" class="btn-submit" value="Enviar consulta"/>
             </form>
           </div>
         </section>

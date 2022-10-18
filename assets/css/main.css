@@ -40,8 +40,10 @@ img {
   margin: auto;
   padding: 5px 35px;
   margin-top: 30px;
+  margin-bottom: 10px;
   padding-bottom: 30px;
   border-radius: 3px;
+  backdrop-filter: blur(5px);
 }
 .contenedor-form .form-label {
   display: block;
@@ -84,7 +86,7 @@ img {
   background: #ed8f03;
 }
 
-/* stylo formualrio*/
+/* stylo formulario*/
 
 /* Header */
 
@@ -126,6 +128,10 @@ nav {
   }
   .titulo {
     margin-right: 50px;
+  }
+
+  .menu{
+    margin-left: 10px;
   }
 }
 
@@ -296,7 +302,7 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
 }
 
 #mapa div:last-child {
-  background-color: #ed8f03a5;
+  background-color:  #ed8f03;
   text-align: center;
   padding-top: 6rem;
 }
@@ -407,4 +413,18 @@ footer {
   margin-bottom: 40px;
   color: rgb(58, 65, 72);
   padding: 0px 40px;
+}
+
+/* Modal */
+/* Corroborar Breakpoint */
+
+
+@media screen and (max-width: 1000px){
+
+  .row{
+    flex-direction: column;
+  }
+  .col{
+    flex-direction: row;
+  }
 }
