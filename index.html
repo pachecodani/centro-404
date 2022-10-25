@@ -29,7 +29,7 @@
               <img src="./images/CFL404icon.ico" alt="logo" />
             </a>
             <div>
-              <p class="titulo mb-auto mt-4 ;">
+              <p class="titulo mb-auto mt-4 fs-5">
                 CENTRO DE FORMACION <br />
                 LABORAL Nº 404
               </p>
@@ -83,33 +83,33 @@
             <div class="menu collapse navbar-collapse" id="menu">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item pe-4">
-                  <a class="nav-link active" href="#"><i class="bi bi-house">Inicio</i></a>
+                  <a class="nav-link active fw-bolder" href="#"><i class="bi bi-house fs-5 ">Inicio</i></a>
                 </li>
                 <li class="nav-item pe-4">
-                  <a class="nav-link" href="#mapa"><i class="bi bi-map">Como llegar</i></a>
+                  <a class="nav-link fw-bolder" href="#mapa"><i class="bi bi-map fs-5 ">Cómo llegar</i></a>
                 </li>
                 <li class="nav-item dropdown pe-4">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle fw-bolder"
                     href="#"
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     href="#"
-                    ><i class="bi bi-book">Cursos</i></a
+                    ><i class="fs-5 bi bi-book">Cursos</i></a
                     >
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="">Administracion</a></li>
-                    <li><a class="dropdown-item" href="">Electromecanica</a></li>
-                    <li><a class="dropdown-item" href="">Comunicacion</a></li>
-                    <li><a class="dropdown-item" href="">Saneamiento Ambiental</a></li>
+                    <li><a class="fs-5 dropdown-item fw-bolder" href="">Administracion</a></li>
+                    <li><a class="fs-5 dropdown-item fw-bolder" href="">Electromecanica</a></li>
+                    <li><a class="fs-5 dropdown-item fw-bolder" href="">Comunicacion</a></li>
+                    <li><a class="fs-5 dropdown-item fw-bolder" href="">Saneamiento Ambiental</a></li>
                   </ul>
                 </li>
                 <li class="nav-item pe-4">
-                  <a class="nav-link" href="#faq"><i class="bi bi-patch-question">Preguntas frecuentes</i></a>
+                  <a class="nav-link fw-bolder" href="#faq"><i class="bi bi-patch-question fs-5">Preguntas frecuentes</i></a>
                 </li>
                 <li class="nav-item pe-4">
-                  <a class="nav-link" href="#sect-form"><i class="bi bi-mailbox">Contacto</i></a>
+                  <a class="nav-link fw-bolder" href="#sect-form"><i class="bi bi-mailbox fs-5">Contacto</i></a>
                 </li>
               </ul>
             </div>
@@ -117,38 +117,60 @@
         </nav>
       </header>
       <main>
-        <section id="carrousel">
-          <div class="container-all">
+        <section id="carrousel" class="container-lg">
+          <div class="container-all" style="max-height: 350px;">
             <input type="radio" id="1" name="image-slide" hidden />
             <input type="radio" id="2" name="image-slide" hidden />
             <input type="radio" id="3" name="image-slide" hidden />
+            <input type="radio" id="4" name="image-slide" hidden />
+            <input type="radio" id="5" name="image-slide" hidden />
+            <input type="radio" id="6" name="image-slide" hidden />
 
             <div class="slide">
               <div class="item-slide">
-                <img src="images/1.jpg" />
+                <img src="images/carrousel1.JPG"/>
               </div>
               <div class="item-slide">
-                <img src="images/2.jpg" />
+                <img src="images/carrousel2.JPG"/>
               </div>
               <div class="item-slide">
-                <img src="images/3.jpg" />
+                <img src="images/carrousel3.JPG"/>
+              </div>
+              <div class="item-slide">
+                <img src="images/carrousel4.jpeg"/>
+              </div>
+              <div class="item-slide">
+                <img src="images/carrousel5.JPG"/>
+              </div>
+              <div class="item-slide">
+                <img src="images/carrousel6.jpeg"/>
               </div>
             </div>
             <div class="pagination">
               <label for="1" class="pagination-item">
-                <img src="images/1.jpg" />
+                <img src="images/carrousel1.JPG" />
               </label>
               <label for="2" class="pagination-item">
-                <img src="images/2.jpg" />
+                <img src="images/carrousel2.JPG" />
               </label>
               <label for="3" class="pagination-item">
-                <img src="images/3.jpg" />
+                <img src="images/carrousel3.JPG" />
+              </label>
+              <label for="4" class="pagination-item">
+                <img src="images/carrousel4.jpeg" />
+              </label>
+              <label for="5" class="pagination-item">
+                <img src="images/carrousel5.JPG" />
+              </label>
+              <label for="6" class="pagination-item">
+                <img src="images/carrousel6.jpeg" />
               </label>
             </div>
           </div>
         </section>
         <section id="frase-motivadora"></section>
-        <h1 class="cursos-title"><span>Cursos Gratuitos</span></h1>
+        <h1 class="cursos-title"><span>CURSOS GRATUITOS - TÍTULOS OFICIALES</span></h1>
+        <h2 class="cursos-title fst-italic"><span>"Capacitate para crecer"</span></h2>
         <section id="cursos">
           <div class="container-cursos">
             <div class="card">
@@ -328,7 +350,7 @@
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  ¿ Los cursos tienen algun costo?
+                  ¿Los cursos son gratuitos?
                 </button>
               </h2>
               <div
@@ -338,12 +360,9 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong>Los cursos son completamente gratuitos.</strong>
-                  Nuestras capacitaciones son gratuitas gracias a... Lorem ipsum
-                  dolor, sit amet consectetur adipisicing elit. Quis quas
-                  consectetur culpa quaerat vel sequi, optio aspernatur ducimus
-                  quia reiciendis placeat molestiae voluptas perferendis veniam
-                  perspiciatis! Tempore pariatur doloribus rem..
+                  ¡Si! Todos los cursos son gratuitos.<br>
+                  Las y los estudiantes <strong>no deben abonar nada</strong> durante el desarrollo del curso ni tampoco para recibir el título.<br>
+                  La formación laboral es <strong>pública y gratuita</strong>.
                 </div>
               </div>
             </div>
@@ -357,7 +376,7 @@
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  ¿Hay cursos virtuales?
+                  ¿El certificado es oficial?
                 </button>
               </h2>
               <div
@@ -367,17 +386,7 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong>Los cursos son presenciales.</strong> Contamos con un
-                  gran establecimiento que nos permite asistir de forma segura
-                  porque... Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Enim, eligendi eos sint ducimus quo quis quisquam veniam
-                  nesciunt vero dolores neque cum exercitationem modi laborum
-                  ipsum corrupti porro earum nulla. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Temporibus illo voluptates, quam
-                  maxime atque quod quis omnis aliquid voluptatibus magnam eum
-                  voluptatum architecto quae soluta itaque voluptas sit adipisci
-                  velit.
-                </div>
+                  ¡Si! Al concluir y aprobar el curso que hayas elegido tendrás un <b>certificado emitido por el Ministerio de Educación de la Provincia de Buenos Aires</b>. Es válido para presentar en tu trabajo o sumarlo al currículum vitae.
               </div>
             </div>
             <div class="accordion-item">
@@ -390,7 +399,7 @@
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  ¿Los titulos son oficiales?
+                  ¿Dónde está ubicado el CFL?
                 </button>
               </h2>
               <div
@@ -400,15 +409,9 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong
-                    >Los titulos cuentan con certificación nacional.</strong
-                  >
-                  Todas nuestras capacitaciones son oficiales y cuentan con
-                  certificados oficiales... Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Cupiditate sed magnam alias
-                  exercitationem harum aspernatur, iste necessitatibus. Officia
-                  sit et maiores maxime sunt impedit vitae distinctio dolores,
-                  facilis natus dolore?
+                  Nos encontrás en <b>Camino Rivadavia entre 127 y 128</b> - Ensenada.
+                  Estamos a 6 cuadras de La Plata. Si querés ir en <b>transporte público</b>, te podes tomar el 307 (Todos) o 275 (cartel Punta Lara o Boca cerrada) Te dejen en la puerta. 
+                  Si vas <b>en auto</b> tenemos estacionamiento propio! 
                 </div>
               </div>
             </div>
@@ -416,7 +419,7 @@
         </section>
         <section id="sect-form">
           <div class="contenedor-form">
-            <form action="" class="cont-form bg-dark bg-gradient mb-3" style="--bs-bg-opacity: .3;">
+            <form action="mailto:cfp404ensenada@gmail.com" method="post" class="cont-form bg-dark bg-gradient mb-3" enctype="text/plain" style="--bs-bg-opacity: .3;">
               <div class="form-header">
                 <h1 class="form-title"><span>Contacto</span></h1>
               </div>
@@ -472,9 +475,9 @@
             <img src="/images/mapa.png" width="75px" alt="">
             <h3>¿Cómo llegar?</h3>
             <ul>
-              <li>Linea de colectivo 307</li>
-              <li>Linea de colectivo</li>
-              <li>Autopista Bs. As. - La Plata</li>
+              <li>Linea de colectivo 307 (Todas las lineas)</li>
+              <li>Linea de colectivo 275 (Linea Punta Lara o Boca cerrada)</li>
+              <li>Camino Rivadavia entre 127 y 128</li>
             </ul>
           </div>
         </section>
