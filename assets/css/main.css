@@ -149,124 +149,29 @@ nav {
 
 /* Carrousel */
 
-.container-all {
-  position: relative;
-  max-width: 1500px;
-  width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.slide {
-  display: flex;
-  transform: translate3d(0, 0, 0);
-  transition: all 300ms;
-  animation: autoplay 6.5s infinite alternate;
-  /* animation-fill-mode: forwards; */
-  position: relative;
-  top: auto; /*112px before*/
-  height: auto; /*469px before*/
-}
-@media (max-width: 768px) {
-  .slide {
-    top: 106px;
-    height: 250px;
+@keyframes slidy {
+  0% { left: 0%; }
+  10% { left: 0%; }
+  20% { left: -100%; }
+  30% { left: -100%; }
+  40% { left: -200%; }
+  50% { left: -200%; }
+  60% { left: -300%; }
+  70% { left: -300%; }
+  80% { left: -400%; }
+  100% { left: -400%; }
   }
-}
-
-.item-slide {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  flex-grow: 0;
-  max-width: 100%;
-}
-
-.pagination {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.pagination-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid white;
-  width: 16px;
-  height: 16px;
-  border-radius: 5px;
-  overflow: hidden;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.5);
-  margin: 0 10px;
-  text-align: center;
-  transition: all 300ms;
-}
-
-.pagination-item:hover {
-  transform: scale(1.3);
-}
-
-.pagination-item img {
-  display: inline-block;
-  max-width: none;
-  height: 100%;
-  transform: scale(1);
-  opacity: 0;
-  transition: all 300ms;
-}
-
-.pagination-item:hover img {
-  opacity: 1;
-  transform: scale(1);
-}
-
-input[id="1"]:checked ~ .slide {
-  animation: none;
-  transform: translate3d(0, 0, 0);
-}
-
-input[id="1"]:checked ~ .pagination .pagination-item[for="1"] {
-  background: white;
-}
-
-input[id="2"]:checked ~ .slide {
-  animation: none;
-  transform: translate3d(calc(-100% * 1), 0, 0);
-}
-
-input[id="2"]:checked ~ .pagination .pagination-item[for="2"] {
-  background: white;
-}
-
-input[id="3"]:checked ~ .slide {
-  animation: none;
-  transform: translate3d(calc(-100% * 2), 0, 0);
-}
-
-input[id="3"]:checked ~ .pagination .pagination-item[for="3"] {
-  background: white;
-}
-
-@keyframes autoplay {
-  33.33% {
-    transform: translate3d(calc(-100% * 0), 0, 0);
+  
+  body { margin: 0; } 
+  div#slider { overflow: hidden; }
+  div#slider figure img { width: 20%; float: left; }
+  div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 26s slidy infinite; 
   }
-  66.66% {
-    transform: translate3d(calc(-100% * 1), 0, 0);
-  }
-  100% {
-    transform: translate3d(calc(-100% * 2), 0, 0);
-  }
-}
-
 /* Frase-Motivadora */
 
 /* Cursos */
