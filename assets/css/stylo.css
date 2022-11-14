@@ -33,3 +33,16 @@
     text-decoration:none;
 
 }
+
+.btn-primary{
+    margin-bottom: 5px;
+}
+
+.modal-header{
+    background-color: rgb(77, 159, 214, 0.7);
+    text-transform: uppercase;
+}
+
+.modal-header h1{
+    margin-left: auto;
+}

@@ -112,8 +112,8 @@ nav {
   transition: background-color 0.5s;
   justify-content: end;
   background: #ffb75e;
-  background: -webkit-linear-gradient(to right, #ed8f03, #ffb75e);
-  background: linear-gradient(to right, #ed8f03, #f6be7b);
+  background: -webkit-linear-gradient(to left, #4d9fd6 , #ffb75e);
+  background: linear-gradient(to left, #4d9fd6 , #f6be7b);
 }
 .titulo {
   font-family: "Anton", sans-serif;
@@ -207,7 +207,7 @@ nav {
 }
 
 #mapa div:last-child {
-  background-color:  #ed8f03;
+  background-color:   rgb(77, 159, 214, 0.7);
   text-align: center;
   padding-top: 6rem;
 }
