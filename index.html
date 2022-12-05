@@ -21,7 +21,7 @@
   </head>
   <body class="p-0">
       <header class="sticky-top ">
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-md gradientBlue">
           <div class="container-fluid p-0">
             <!-- icono -->
 
@@ -83,10 +83,22 @@
             <div class="menu collapse navbar-collapse" id="menu">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item pe-4">
-                  <a class="nav-link active fw-bolder" href="#"><i class="bi bi-house fs-5 ">Inicio</i></a>
+                  <a class="nav-link active fw-bolder" href="#">
+                    <i class="bi bi-house fs-4">
+                      <span class="m-1">
+                        Inicio
+                      </span>
+                    </i>
+                  </a>
                 </li>
                 <li class="nav-item pe-4">
-                  <a class="nav-link fw-bolder" href="#mapa"><i class="bi bi-map fs-5 ">Cómo llegar</i></a>
+                  <a class="nav-link fw-bolder" href="#mapaTop">
+                    <i class="bi bi-map fs-4 ">
+                      <span class="m-1">
+                        Cómo llegar
+                      </span>
+                    </i>
+                  </a>
                 </li>
                 <li class="nav-item dropdown pe-4">
                   <a
@@ -96,20 +108,53 @@
                     role="button"
                     data-bs-toggle="dropdown"
                     href="#"
-                    ><i class="fs-5 bi bi-book">Cursos</i></a
                     >
+                    <i class="fs-4 bi bi-book">
+                      <span class="m-1">
+                        Cursos
+                      </span>
+                    </i>
+                  </a>
                   <ul class="dropdown-menu">
-                    <li><a class="fs-5 dropdown-item fw-bolder" href="">Administracion</a></li>
-                    <li><a class="fs-5 dropdown-item fw-bolder" href="">Cursos Varios</a></li>
-                    <li><a class="fs-5 dropdown-item fw-bolder" href="">Comunicacion</a></li>
-                    <li><a class="fs-5 dropdown-item fw-bolder" href="">Saneamiento Ambiental</a></li>
+                    <li>
+                      <button type="button" class="fs-4 dropdown-item fw-bolder gradientBlue" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        Administración
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="fs-4 dropdown-item fw-bolder gradientBlue" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        Cursos Varios
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="fs-4 dropdown-item fw-bolder gradientBlue" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        Comunicación
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" class="fs-4 dropdown-item fw-bolder gradientBlue" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        Saneamiento Ambiental
+                      </button>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item pe-4">
-                  <a class="nav-link fw-bolder" href="#faq"><i class="bi bi-patch-question fs-5">Preguntas frecuentes</i></a>
+                  <a class="nav-link fw-bolder" href="#faq">
+                    <i class="bi bi-patch-question fs-4">
+                      <span class="m-1">
+                        Preguntas Frecuentes
+                      </span>
+                    </i>
+                  </a>
                 </li>
                 <li class="nav-item pe-4">
-                  <a class="nav-link fw-bolder" href="#sect-form"><i class="bi bi-mailbox fs-5">Contacto</i></a>
+                  <a class="nav-link fw-bolder" href="#sect-form">
+                    <i class="bi bi-mailbox fs-4">
+                      <span class="m-1">
+                        Contacto
+                      </span>
+                    </i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -122,13 +167,13 @@
             <img src="images/carrousel1.JPG"  alt="">
             <img src="images/carrousel2.JPG"  alt="">
             <img src="images/carrousel3.JPG" alt="">
-            <img src="images/carrousel4.JPG" alt="">
+            <img src="images/carrousel4.jpg" alt="">
             <img src="images/carrousel5.JPG" alt="">
             </figure>
             </div>
         <section id="frase-motivadora"></section>
         <h1 class="cursos-title"><span>CURSOS GRATUITOS - TÍTULOS OFICIALES</span></h1>
-        <h2 class="cursos-title fst-italic"><span>"Capacitate para crecer"</span></h2>
+        <h2 class="cursos-title fst-italic"><span>Conoce nuestras áreas de estudio</span></h2>
         <section id="cursos">
             <div class="container-cursos">
               <div class="card">
@@ -446,7 +491,7 @@
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button
+                <button 
                   class="accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
@@ -487,10 +532,10 @@
                 id="collapseTwo"
                 class="accordion-collapse collapse"
                 aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample"
-              >
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   ¡Si! Al concluir y aprobar el curso que hayas elegido tendrás un <b>certificado emitido por el Ministerio de Educación de la Provincia de Buenos Aires</b>. Es válido para presentar en tu trabajo o sumarlo al currículum vitae.
+                </div>
               </div>
             </div>
             <div class="accordion-item">
@@ -519,11 +564,35 @@
                 </div>
               </div>
             </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  ¿Cómo inscribirse a un curso?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Llenar el <a href="#sect-form">formulario de contacto</a> con la información solicitada, y el curso de interés.
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section id="sect-form">
           <div class="contenedor-form">
-            <form action="mailto:cfp404ensenada@gmail.com" method="post" class="cont-form bg-dark bg-gradient mb-3" enctype="text/plain" style="--bs-bg-opacity: .3;">
+            <form id="formulario" action="mailto:cfp404ensenada@gmail.com" method="post" class="cont-form bg-dark bg-gradient mb-3" enctype="text/plain" style="--bs-bg-opacity: .3;">
               <div class="form-header">
                 <h1 class="form-title"><span>Contacto</span></h1>
               </div>
@@ -552,17 +621,54 @@
                 placeholder="Aqui escriba su correo "
               />
 
+              <label for="telefono" class="form-label"></label>
+              <input
+                type="text"
+                class="form-input"
+                id="telefono"
+                placeholder="Aqui escriba su telefono "
+              />
+              
               <label for="mensaje" class="form-label"></label>
               <textarea
                 id="mensaje"
                 class="form-textarea"
-                placeholder="Escribir mensaje"
+                placeholder="Escriba aquí su curso de interes o inquietud."
               ></textarea>
-
-              <input type="submit" class="btn-submit" value="Enviar consulta"/>
+              <label class="form-label fs-5">
+                Adjuntar Curriculum (Opcional)
+              </label>
+              <input type="file" accept="image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" />
+              <input type="submit" class="mt-3 btn-submit" value="Enviar consulta"/>
             </form>
           </div>
+          <!--modal example-->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            MODAL ENVIADO A USAR
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-confirm">
+              <div class="modal-content">
+                <div class="modal-header bg-success bg-opacity-25">
+                  <div class="icon-box">
+                  </div>				
+                  <h4 class="modal-title">Enviado!</h4>	
+                </div>
+                <div class="modal-body">
+                  <p class="text-center">
+                    Se ha enviado tu correo con exito.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success btn-block w-100" data-bs-dismiss="modal">
+                    OK
+                  </button>
+                </div>
+              </div>
+          </div>
+          </div>
         </section>
+        <div class="mb-4" id="mapaTop"></div>
         <section id="mapa">
           <div>
             <iframe
