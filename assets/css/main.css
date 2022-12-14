@@ -291,6 +291,15 @@ footer {
   margin-top: 100px;
 }
 
+.box__footer2 {
+  
+}
+
+.box__footer2 img {
+  justify-content: center;
+  margin-right: 20px;
+}
+
 .box__footer {
   display: flex;
   flex-direction: column;
