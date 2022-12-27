@@ -605,34 +605,32 @@
     </section>
     <section id="sect-form">
       <div class="contenedor-form">
-        <form id="formulario" action="/send-email" method="POST"
-          class="cont-form bg-dark bg-gradient mb-3" enctype="text/plain" style="--bs-bg-opacity: 0.3">
+        <form id="formulario" action="/" method="POST"
+          class="cont-form bg-dark bg-gradient mb-3" style="--bs-bg-opacity: 0.3">
           <div class="form-header">
             <h1 class="form-title"><span>Contacto</span></h1>
           </div>
           <label for="nombre" class="form-label"></label>
-          <input type="text" class="form-input" id="nombre" name="nombre" placeholder="Aqui escriba su nombre" />
+          <input type="text" class="form-input" id="nombre" name="nombre_form" placeholder="Aqui escriba su nombre" />
 
           <label for="apellido" class="form-label"></label>
-          <input type="text" class="form-input" id="apellido" name="apellido" placeholder="Aqui escriba su apellido" />
+          <input type="text" class="form-input" id="apellido" name="apellido_form" placeholder="Aqui escriba su apellido" />
 
           <label for="correo" class="form-label"></label>
-          <input type="email" class="form-input" id="correo" name="correo" placeholder="Aqui escriba su correo " />
+          <input type="email" class="form-input" id="correo" name="correo_form" placeholder="Aqui escriba su correo " />
 
           <label for="telefono" class="form-label"></label>
-          <input type="text" class="form-input" id="telefono" name="telefono" placeholder="Aqui escriba su telefono " />
+          <input type="text" class="form-input" id="telefono" name="telefono_form" placeholder="Aqui escriba su telefono " />
 
           <label for="mensaje" class="form-label"></label>
-          <textarea id="mensaje" name="mensaje" class="form-textarea"
+          <textarea id="mensaje" name="mensaje_form" class="form-textarea"
             placeholder="Escriba aquí su curso de interes o inquietud."></textarea>
           <label class="form-label fs-5">
             Adjuntar Curriculum (Opcional)
           </label>
-          <input type="file" accept="image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" />
-          <!-- 
+          <input type="file" name="docs_form" accept="image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf" />
           <input type="submit" class="mt-3 btn-submit" value="Enviar consulta"/>
-          -->
-          <Button class="mt-3 btn-submit">Enviar consulta</Button>
+          <!-- <Button class="mt-3 btn-submit">Enviar consulta</Button>-->
         </form>
       </div>
     </section>

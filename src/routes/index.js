@@ -1,39 +1,51 @@
+const nodemailer = require('nodemailer');
 const {Router} = require('express');
 const router = Router();
 
-router.post('/send-email', (req,res)=> {
-    console.log(req.body);
-    console.log(req.body.nombre);
-    console.log(req.params.nombre);
-    console.log(req.body);
-    res.send('recibido');
-    /*
-    res.send('Datos' + req.params.nombre + req.params.apellido + req.body.correo + req.body.telefono + req.body.mensaje);
-    console.log(req.body.nombre);
-    console.log(req.params.nombre);
-    console.log(req.body);
-    
-    //mailto:cfp404ensenada@gmail.com
 
-    //funciando, la idea ahora, es en el correo 
-    //mandar un mensaje en el body con los inputs
-    /* 
+router.post('/', (req,res)=> {
+    let nombre = req.body.nombre_form;
+    let apellido = req.body.apellido_form;
+    let correo = req.body.correo_form;
+    let telefono = req.body.telefono_form;
+    let mensaje = req.body.mensaje_form;
+    let archivo = req.body.docs_form;
+    
+    let contentHTML = `
+        <h1> MENSAJE VÍA FORMULARIO DEL CENTRO 404  </h1>
+        <ul>
+            <li>Nombre: ${nombre} </li>
+            <li>apellido: ${apellido} </li>
+            <li>correo: ${correo} </li>
+            <li>telefono: ${telefono} </li>
+        </ul>
+        <p>
+            Mensaje: <br>
+                ${mensaje}
+        </p>
+        Archivo: ${archivo}
+    `;
+    console.log(contentHTML);
+    //mailto:cfp404ensenada@gmail.com
     const transporter = nodemailer.createTransport({
         host: 'smtp.ethereal.email',
         port: 587,
         secure: false,
         auth: {
-            user: 'lorenzo90@ethereal.email',
-            pass: 'bxbTr3j61vwf8qt1Kc'
+            user: 'bernardo.lindgren22@ethereal.email',
+            pass: 'K9yF8NNAMCRMEYDzpr'
+        },
+        tls:{
+            rejectUnauthorized: false
         }
     });
 
     // Message object
     let message = {
-        from: 'Remitente',
-        to: 'brianpumarica@gmail.com',
-        subject: 'Ethereal unit test message',
-        text: 'Hello world',
+        from: 'Centro de Formación Laboral 404',
+        to: 'brianpumaricapeche@gmail.com',
+        subject: 'MENSAJE VÍA FORMULARIO DEL CENTRO 404',
+        html: contentHTML,
     };
 
     transporter.sendMail(message, (err, info) => {
@@ -45,7 +57,7 @@ router.post('/send-email', (req,res)=> {
             res.status(200).jsonp(req.body);
         }
     });
-    */
+    
 });
 
 module.exports = router;
