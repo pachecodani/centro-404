@@ -1,3 +1,4 @@
+/*
 document.getElementById("formulario").addEventListener('submit', validarFormulario); 
 
 function validarFormulario(e) {
@@ -29,3 +30,4 @@ function validarFormulario(e) {
     }
     this.submit();
   }
+*/
